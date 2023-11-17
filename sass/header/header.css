@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header, .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  background: #000;
+  justify-content: space-around;
+}
+
+.nav__logo {
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.menu {
+  gap: 6px;
+}
+.menu div {
+  width: 30px;
+  height: 4px;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.header {
+  min-height: 90vh;
+  width: 100%;
+  background: #05313f;
+  gap: 100px;
+}
+
+.header__title {
+  color: aliceblue;
+  font-size: 40px;
+}/*# sourceMappingURL=header.css.map */
