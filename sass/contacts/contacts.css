@@ -38,6 +38,16 @@
   background: #000;
 }
 
+.telegram:active::after {
+  color: blue;
+  background-color: black;
+}
+
+.telegram:active i {
+  color: aliceblue;
+  background: #000;
+}
+
 .telegram {
   color: aliceblue;
   transition: 0.5s all;
@@ -58,6 +68,10 @@
   background: #000;
 }
 
+.instagram:active::after {
+  background: #000;
+}
+
 .github {
   transition: 0.5s ease all;
 }
@@ -67,5 +81,13 @@
 }
 
 .github:hover i {
+  color: #000;
+}
+
+.github:active::after {
+  background-color: aliceblue;
+}
+
+.github:active i {
   color: #000;
 }/*# sourceMappingURL=contacts.css.map */
