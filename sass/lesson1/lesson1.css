@@ -56,4 +56,11 @@
 
 .header__text-title3 {
   color: black;
+}
+
+.header__text-img {
+  width: 100%;
+}
+.header__text-img img {
+  width: 100%;
 }/*# sourceMappingURL=lesson1.css.map */
