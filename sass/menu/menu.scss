@@ -13,14 +13,21 @@
     flex-wrap: wrap;
 }
 
-.menu__list {
+.menu__link {
     min-width: 200px;
     background-color: bisque;
     padding: 20px;
     border-radius: 10px;
-    .menu__link {
-        color: black;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    @extend %flex-center;
+    justify-content: center;
+    transition: .5s ease all;
 }
+
+.menu__link:active {
+    transform: translateX(2px);
+    background-color: aqua;
+}
+

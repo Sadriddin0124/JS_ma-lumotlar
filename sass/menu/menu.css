@@ -1,11 +1,23 @@
-.menu__list {
+.menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu__link {
   min-width: 200px;
   background-color: bisque;
   padding: 20px;
   border-radius: 10px;
-}
-.menu__list .menu__link {
   color: black;
   text-transform: uppercase;
   font-weight: 700;
+  justify-content: center;
+  transition: 0.5s ease all;
+}
+
+.menu__link:active {
+  transform: translateX(2px);
+  background-color: aqua;
 }/*# sourceMappingURL=menu.css.map */

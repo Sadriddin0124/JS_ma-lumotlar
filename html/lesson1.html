@@ -11,7 +11,8 @@
     <div class="container">
         <nav class="navbar">
             <div class="nav__logo">JS</div>
-            <a href="./html/lesson1.html" class="menu">
+            <a href="./contacts.html" class="contacts">contacts</a>
+            <a href="./menu.html" class="menu">
                 <div class="div"></div>
                 <div class="div"></div>
                 <div class="div"></div>
@@ -19,17 +20,33 @@
         </nav>
         <header class="header">
             <h1 class="header__title">Execution Context</h1>
-            <div class="header__text" style="color: aliceblue;">
+            <div class="header__text" >
                 <p class="header__text-title">Execution context 2 ga bo'linadi:</p>
                 <p class="header__text-title2">1. Global Execution Context</p>
                 <p class="header__text-title">Global Execution Context 2ga bo'linadi:</p>
-                <p>1. Creation Phase</p>
-                <p>Bu bosqichda variable nomini o'rganib chiqadi</p>
-                <p>2. Execution Phase</p>
+                <p class="header__text-title3">1. Creation Phase</p>
+                <p>Bu bosqichda hoisting hodissai sodir bo'ladi va brauzer conelarni bir marta to'liq o'qib chiqadi va variable nomini o'rganib chiqadi</p>
+                <p class="header__text-title3">2. Execution Phase</p>
                 <p>Bu bosqichda o'zgaruvchilar qiymatini o'zlashtirib chiqadi</p>
                 <p class="header__text-title2">2. Function Execution Context</p>
-                <p>BU bosqichda ham xuddi shu hodisalar bo'lib o'tadi faqat barchasi function scope {} ichida ro'y beradi</p>
+                <p>Bu bosqichda ham xuddi shu hodisalar bo'lib o'tadi faqat barchasi function scope {} ichida ro'y beradi</p>
             </div>
+            <h1 class="header__title">Lexical Environment</h1>
+            <div class="header__text">
+                <p class="header__text-title">Lexical environment</p>
+                <p>Har bir scope {} ichidage muhit lexical environment deyiladi</p>
+                <p class="header__text-title2">Scope{}lar 3ga bo'linadi:</p>
+                <p class="header__text-title3">1. Global scope{}</p>
+                <p>Bu butun bir JS fayl degani</p>
+                <p class="header__text-title3">2. Function scope{}</p>
+                <p>Function ichida yozilgan codelar function scope ichida yozilgan bo'ladi</p>
+                <p class="header__text-title3">3. Block scope{}</p>
+                <p>Bu shunchaki scope ochib ishlatish {
+                    let name = 'Sadriddin'    
+                }</p>
+            </div>
+            <h1 class="header__title">Scope Chain</h1>
+            <div class="header__text"></div>
         </header>
     </div>
 </body>

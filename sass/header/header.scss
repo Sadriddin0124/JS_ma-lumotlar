@@ -14,11 +14,46 @@
 }
 
 .navbar {
+    position: fixed;
     width: 100%;
     padding: 20px;
     background: #000;
     @extend %flex-center;
     justify-content: space-around;
+    color: aliceblue;
+}
+.contacts {
+    position: relative;
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: uppercase;
+    height: 50px;
+    @extend %flex-center;
+    transition: .5s ease all;
+}
+
+.contacts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background-color: bisque;
+    width: 0%;
+}
+.contacts::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    background-color: bisque;
+    width: 0%;
+}
+
+ .contacts:hover  {
+    // width: 100%;
+    color: red;
 }
 
 .nav__logo {
@@ -29,20 +64,25 @@
 .menu {
     @extend %flex-column;
     gap: 6px;
-    div {
+    .div {
         width: 30px;
         height: 4px;
         background-color: aliceblue;
         border-radius: 5px;
     }
+    .div:hover  {
+       // width: 100%;
+       color: red;
+    }
 }
 
 .header {
-    min-height: 90vh;
+    padding: 200px 10px;
+    min-height: 100vh;
     width: 100%;
     background: #05313f;
     @extend %flex-column;
-    gap: 100px;
+    gap: 30px;
 }
 
 .header__title {

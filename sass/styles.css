@@ -1,6 +1,7 @@
 @import url("./header/header.css");
 @import url("./lesson1/lesson1.css");
 @import url("./menu/menu.css");
+@import url("./contacts/contacts.css");
 * {
   padding: 0;
   margin: 0;

@@ -1,4 +1,4 @@
-.navbar {
+.contacts, .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +14,45 @@
 }
 
 .navbar {
+  position: fixed;
   width: 100%;
   padding: 20px;
   background: #000;
   justify-content: space-around;
+  color: aliceblue;
+}
+
+.contacts {
+  position: relative;
+  color: aliceblue;
+  font-size: 30px;
+  text-transform: uppercase;
+  height: 50px;
+  transition: 0.5s ease all;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background-color: bisque;
+  width: 0%;
+}
+
+.contacts::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  background-color: bisque;
+  width: 0%;
+}
+
+.contacts:hover {
+  color: red;
 }
 
 .nav__logo {
@@ -28,18 +63,22 @@
 .menu {
   gap: 6px;
 }
-.menu div {
+.menu .div {
   width: 30px;
   height: 4px;
   background-color: aliceblue;
   border-radius: 5px;
 }
+.menu .div:hover {
+  color: red;
+}
 
 .header {
-  min-height: 90vh;
+  padding: 200px 10px;
+  min-height: 100vh;
   width: 100%;
   background: #05313f;
-  gap: 100px;
+  gap: 30px;
 }
 
 .header__title {

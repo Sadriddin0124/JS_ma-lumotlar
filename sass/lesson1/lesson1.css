@@ -13,6 +13,8 @@
   border-radius: 10px;
   align-items: start;
   gap: 10px;
+  margin-bottom: 50px;
+  color: aliceblue;
 }
 
 .back {
@@ -25,6 +27,7 @@
   background-color: red;
   border-radius: 10px;
   box-shadow: 0 0 10px red;
+  transition: 0.5s ease all;
 }
 .back span {
   font-size: 25px;
@@ -32,6 +35,13 @@
 
 .back:active {
   transform: translateY(1px);
+  background-color: blue;
+  box-shadow: 0 0 10px blue;
+}
+
+.back:hover {
+  background-color: blue;
+  box-shadow: 0 0 10px blue;
 }
 
 .header__text-title {
@@ -40,6 +50,10 @@
 }
 
 .header__text-title2 {
-  color: blue;
+  color: yellowgreen;
   font-size: 20px;
+}
+
+.header__text-title3 {
+  color: black;
 }/*# sourceMappingURL=lesson1.css.map */
