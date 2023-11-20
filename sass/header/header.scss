@@ -17,12 +17,51 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 70px;
     padding: 20px;
     background: #000;
     @extend %flex-center;
-    justify-content: space-around;
     color: aliceblue;
 }
+
+.navbar__items {
+    position: relative;
+    width: 100%;
+    @extend %flex-center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.nav__logo {
+    position: absolute;
+    left: 20px;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__menu1 {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: #01245d;
+    width: 200px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.remove {
+    text-align: center;
+    background-color:green;
+    border-radius: 10px;
+}
+
+.menu__link22 {
+    display: none;
+}
+
 .contacts {
     position: relative;
     color: aliceblue;
@@ -63,8 +102,11 @@
 }
 
 .menu {
+    position: absolute;
+    right: 20px;
     @extend %flex-column;
     gap: 6px;
+    transition: 1s ease all;
     .div {
         width: 30px;
         height: 4px;

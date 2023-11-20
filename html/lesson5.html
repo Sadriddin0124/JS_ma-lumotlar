@@ -11,13 +11,20 @@
     <a href="../html/menu.html" class="back">	<span>&#8592;</span> BACK </a>
     <div class="container">
         <nav class="navbar">
-            <div class="nav__logo">JS</div>
-            <a href="./contacts.html" class="contacts">contacts</a>
-            <a href="./menu.html" class="menu">
-                <div class="div"></div>
-                <div class="div"></div>
-                <div class="div"></div>
-            </a>
+            <div class="navbar__items">
+                <h1 class="nav__logo">JS</h1>
+                <a id="menu__link" onclick="Click()" class="menu " href="#">
+                    <div class="div"></div>
+                    <div class="div"></div>
+                    <div class="div"></div>
+                </a>
+                <div id="menu"  class="navbar__menu ">
+                    <a href="./contacts.html" class="contacts">contacts</a>
+                    <a href="./menu.html" class="contacts">Lessons</a>
+                    <a class="contacts" href="/">home</a>
+                    <a id="remove" href="#" onclick="Remove()" class="remove contacts">Back</a>
+                </div>
+            </div>
         </nav>
         <header class="header">
             <h1 class="header__title">Prototype</h1>
@@ -50,5 +57,6 @@
             </div>
         </header>
     </div>
+    <script src="../main.js"></script>
 </body>
 </html>
