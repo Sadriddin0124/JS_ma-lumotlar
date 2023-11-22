@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
+    <link rel="stylesheet" href="../sass/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar__items">
+                <h1 class="nav__logo">JS</h1>
+                <ul class="nav__list">
+                    <a href="./contacts.html" class="contacts">contacts</a>
+                    <a href="./menu.html" class="contacts">Lessons</a>
+                    <a class="contacts" href="/">home</a>
+                    <a href="#" class="contacts">videos</a>
+                </ul>
+                <a id="menu__link" onclick="Click()" class="menu " href="#">
+                    <div class="div  " id="div1"></div>
+                    <div class="div  " id="div2"></div>
+                    <div class="div  " id="div3"></div>
+                </a>
+                <div id="menu"  class="navbar__menu ">
+                    <a href="./contacts.html" class="contacts">contacts</a>
+                    <a href="./menu.html" class="contacts">Lessons</a>
+                    <a class="contacts" href="/">home</a>
+                    <a href="#" class="contacts">videos</a>
+                </div>
+            </div>
+        </nav>
+        <header class="header">
+            <h1 class="header__title">Property Flags</h1>
+            <div class="header__text">
+                <p class="header__text-title">Property Flags 3 ga bo'linadi</p>
+                <p class="header__text-title2">1. writable</p>
+                <p>Objectni qaysidir propertysini writable i true bo'lsa o'zgartirib(overwrite) bo'ladi false bo'lsa o'zgartirib bo'lmaydi</p>
+                <p class="header__text-title2">2. enumerable</p>
+                <p>Objectni qaysidir propertysini enumerable ini true qilinsa bu property loopda ko'rinadi agar false qiladigan bo'lsak u loopda ko'rinmaydi</p>
+                <p class="header__text-title2">3. configurable</p>
+                <p>Objectni qaysidir propertysini configurable  true bo'lsa delete qilib bo'ladi agar false qilinsa o'sha propertyni delete qilib bo'ladi</p>
+                <p class="header__text-title">Agar bitta propertyni o'zgartirmoqchi bo'lsak <span class="header__text-title3">Object.defineProperty(<span class="green">object name</span>, <span class="yellow">'property key'</span>, {<span class="red">property flag:</span> <span class="yellow">true or false</span> })</span> dan foydalaniladi</p>
+                <p class="header__text-title2">Agar ko'proq propertyni o'zgartirmoqchi bo'lsak <span class="header__text-title3">Object.defineProperties( <span class="green">object name,</span> {<br> <span class="yellow">"property key:"</span> { <span class="red">property flag:</span> <span class="yellow">true or false</span> } })</span></p>
+            </div>
+            <h1 class="header__title">DOM</h1>
+            <div class="header__text">
+                <p class="header__text-title">ID orqali elementni chaqirish</p>
+                <div class="header__text-img">
+                    <img src="../images/id.png" alt="">
+                </div>
+                <p class="header__text-title">Class qo'shish</p>
+                <div class="header__text-img">
+                    <img src="../images/addclass.png" alt="">
+                </div>
+                <p class="header__text-title">Class olib tashlash</p>
+                <div class="header__text-img">
+                    <img src="../images/removeclass.png" alt="">
+                </div>
+                <p class="header__text-title">Event qo'shish</p>
+                <div class="header__text-img">
+                    <img src="../images/add event.png" alt="">
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="../main.js"></script>
+</body>
+</html>

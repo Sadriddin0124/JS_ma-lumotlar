@@ -1,0 +1,11 @@
+@media (max-width: 789px) {
+  .nav__list {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .navbar__items {
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=media.css.map */
