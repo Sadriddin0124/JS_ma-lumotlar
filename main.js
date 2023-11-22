@@ -4,8 +4,6 @@ let div1 = document.getElementById('div1')
 let div2 = document.getElementById('div2')
 let div3 = document.getElementById('div3')
 const Click = () => {
-    // let none = menu.style.display = 'none'    
-    // let block = menu.style.display = 'block'
     if (menu.style.display === 'none') {
         menu.style.display = 'block'
         div1.classList.add('div1')
@@ -20,11 +18,7 @@ const Click = () => {
     
 }
 
-// const Remove = () => {
-//     let menu = document.getElementById('menu')
-//     menu.classList.add('menu')
-//     menu.classList.remove('navbar__menu1')
-// }
+
 
 
 
